@@ -1,0 +1,43 @@
+
+.header-block {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    height: 12vh;
+    width: 100%;
+}
+
+.header-block__button {
+    background-color: aqua;
+    color: black;
+    padding: 8px;
+    margin-left: 4px;
+    font-family: cursive;
+    border-radius: 16px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.main-block {
+    margin-top: 11vh;
+    width: 80%;
+    margin-left: 10%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 5px;
+}
+
+.main-block__item {
+    border: 2px solid black;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    background-color: black;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: cursive;
+}
