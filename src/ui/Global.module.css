@@ -40,4 +40,18 @@
     font-size: 1.8rem;
     font-weight: bold;
     font-family: cursive;
+    position: relative;
+}
+
+
+.delete-item-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: aqua;
+  padding: 8px;
+  font-weight: bold;
+  color: black;
+  font-size: 1.6rem;
+  font-family: cursive;
 }

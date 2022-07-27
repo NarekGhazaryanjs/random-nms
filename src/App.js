@@ -25,6 +25,11 @@ const App = () => {
     setNumbers([].concat(numbers.sort((itemFirst,itemSecond) => itemFirst.value - itemSecond.value)))
   }
 
+  const deleteItem = (id) => {
+    const filteredItems = numbers.filter(number => number.id !== id);
+    setNumbers(filteredItems)
+  }
+
   return (
     <Wrapper>
       <Header className={classes['header-block']}>
@@ -36,6 +41,7 @@ const App = () => {
             numbers.map(number => {
               return (
                 <Textitem className={classes['main-block__item']} key={number.id}>
+                  <Button onClick={() => deleteItem(number.id)} className={classes['delete-item-button']}> X </Button>
                   {number.value}
                 </Textitem>
               )
